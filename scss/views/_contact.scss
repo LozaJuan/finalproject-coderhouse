@@ -7,12 +7,12 @@
 
 form {
     @include flex-column;
-    width: 350px;
+    width: 250px;  
     margin: 0 auto;
-    padding: 20px;
     border: 1px solid $color-second;
     border-radius: 5px;
-    font-family: $fuente-principal
+    font-family: $fuente-principal;
+    padding-bottom: 10px;
 }
 
 label {
@@ -23,7 +23,7 @@ label {
 }
 
 input, textarea {
-    width: 100%;
+    width: 80%;
     padding: 12px 20px;
     margin-bottom: 20px;
     border: 1px solid $color-second;
