@@ -161,4 +161,53 @@ input[type=submit]:hover {
   padding-inline: 15px;
 }
 
+.how-work {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*Colors*/
+/*Size fonts*/
+/*Resoluciones de pantallas*/
+/*Separaciones (margenes y paddings)*/
+/*Fuente*/
+/*MIXINS*/
+/*BOLSITAS DE CODIGO*/
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px h2;
+  margin-padding: 20px;
+}
+.about-us p {
+  padding: 40px;
+}
+.about-us img {
+  padding-top: 20px;
+  width: 60%;
+}
+
+.profile-about {
+  width: 400px;
+}
+
+.bg-about-us {
+  background-color: #F6F1F1;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  margin-top: 15px;
+}
+
+body {
+  background-image: url(../img/background.jpg);
+}
+
 /*# sourceMappingURL=styles.css.map */

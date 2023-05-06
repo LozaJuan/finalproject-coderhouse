@@ -5,5 +5,10 @@
 @import "layout/footer";
 @import "views/contact";
 @import "views/home";
+@import "views/how-work";
+@import "views/about-us";
 
 
+body {
+    background-image: url(../img/background.jpg);
+}
