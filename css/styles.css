@@ -77,6 +77,9 @@ footer {
 footer img {
   width: 35px;
 }
+footer a {
+  text-decoration: none;
+}
 
 .whatsapp {
   position: fixed;
