@@ -6,9 +6,7 @@
 
 .navbar {
     font-family: $fuente-principal;
-    background-color: $color-second;
     width: 100%;
-    opacity: 75%;
     a {
         color: $color-first;
         &:hover {
@@ -22,4 +20,12 @@ button.navbar-toggler {
 }
 
 
+a.navbar-brand {
+    font-size: 20px;
+    font-size: $font-medium;
+}
 
+nav.navbar.navbar-expand-lg {
+    background-color: $color-second;
+    opacity: 75%;
+}

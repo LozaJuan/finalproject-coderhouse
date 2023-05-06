@@ -3,11 +3,9 @@
 @import "utilities/mixins";
 @import "layout/header";
 @import "layout/footer";
+@import "views/contact";
 
 
-
-body {
-    font-family: $fuente-principal;
+img {
+    width: 100%;
 }
-
-

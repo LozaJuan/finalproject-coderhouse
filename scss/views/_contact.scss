@@ -1,0 +1,46 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+.title-contact {
+    font-family: $fuente-principal
+}
+
+form {
+    @include flex-column;
+    width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid $color-second;
+    border-radius: 5px;
+    font-family: $fuente-principal
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: $color-second;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border: 1px solid $color-second;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: $color-second;
+    color: $color-first;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: $color-third;
+}

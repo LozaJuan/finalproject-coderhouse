@@ -4,12 +4,12 @@
 
 footer {
     @include flex-column;
+    text-align: center;
     opacity: 75%;
     background-color: $color-second;
     color: $color-first;
     img {
         width: 35px;
-        color: white;
     }
 }
 
