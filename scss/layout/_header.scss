@@ -1,4 +1,5 @@
 @import "../utilities/variables";
+@import "../utilities/mixins";
 
 
 
@@ -6,12 +7,15 @@
 
 .navbar {
     font-family: $fuente-principal;
-    width: 100%;
+    opacity: 85%;
     a {
         color: $color-first;
         &:hover {
             color: $color-fourth;
         }
+    }
+    img {
+        width: 90px;
     }
 }
 
@@ -27,5 +31,25 @@ a.navbar-brand {
 
 nav.navbar.navbar-expand-lg {
     background-color: $color-second;
-    opacity: 75%;
+}
+
+
+@media (min-width: $tablet) {
+    .navbar {
+        font-family: $fuente-principal;
+        font-size: 30px;
+        a {
+            color: $color-first;
+            padding-left: 20px;
+            &:hover {
+                color: $color-fourth;
+            }
+        }
+        li {
+            margin: 10px;
+        }
+        img {
+            width: 100px;
+        }
+    }
 }

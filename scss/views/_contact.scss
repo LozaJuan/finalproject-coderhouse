@@ -19,7 +19,7 @@ label {
     display: block;
     font-size: 18px;
     font-weight: bold;
-    color: $color-second;
+    color: $color-third;
 }
 
 input, textarea {
@@ -44,3 +44,16 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: $color-third;
 }
+
+@media (min-width: $tablet) {
+    form {
+        width: 600px;
+    }
+    input, textarea {
+        width: 75%;
+    }
+    main{
+        padding-bottom: 150px;
+    }
+}
+
