@@ -11,7 +11,51 @@
 /*Separaciones (margenes y paddings)*/
 /*Fuente*/
 .navbar {
-  background-color: #146C94;
+  font-family: "Montserrat", sans-serif;
+  background-color: #19A7CE;
+  width: 100%;
+  opacity: 75%;
+}
+.navbar a {
+  color: #F6F1F1;
+}
+.navbar a:hover {
+  color: #000000;
+}
+
+button.navbar-toggler {
+  background-color: #F6F1F1;
+}
+
+/*Colors*/
+/*Size fonts*/
+/*Resoluciones de pantallas*/
+/*Separaciones (margenes y paddings)*/
+/*Fuente*/
+/*MIXINS*/
+/*BOLSITAS DE CODIGO*/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 75%;
+  background-color: #19A7CE;
+  color: #F6F1F1;
+}
+footer img {
+  width: 35px;
+  color: white;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 15px;
+  right: 25px;
+  width: 60px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
 /*# sourceMappingURL=styles.css.map */

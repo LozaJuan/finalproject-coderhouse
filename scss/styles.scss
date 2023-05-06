@@ -1,6 +1,13 @@
 @import "utilities/globales";
 @import "utilities/variables";
 @import "utilities/mixins";
-@import "layout/header"
+@import "layout/header";
+@import "layout/footer";
+
+
+
+body {
+    font-family: $fuente-principal;
+}
 
 

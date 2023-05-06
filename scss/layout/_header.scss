@@ -5,5 +5,21 @@
 
 
 .navbar {
-    background-color: $color-third;
+    font-family: $fuente-principal;
+    background-color: $color-second;
+    width: 100%;
+    opacity: 75%;
+    a {
+        color: $color-first;
+        &:hover {
+            color: $color-fourth;
+        }
+    }
 }
+
+button.navbar-toggler {
+    background-color: $color-first;
+}
+
+
+
