@@ -1,8 +1,31 @@
 @import "../utilities/variables";
 @import "../utilities/mixins";
 
-.banner img {
-    width: 100%;
-    padding-inline: 15px;
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    img {
+        width: 100%;
+    }
 }
 
+@media (min-width: $tablet) {
+    .banner img {
+        width: 1200px;
+    }
+}
+
+
+.variety {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    .variation {
+        width: 300px;
+        img {
+            width: 100%;
+            padding: 5px;
+        }
+    }
+}

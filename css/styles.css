@@ -159,9 +159,31 @@ input[type=submit]:hover {
 /*Fuente*/
 /*MIXINS*/
 /*BOLSITAS DE CODIGO*/
+.banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .banner img {
   width: 100%;
-  padding-inline: 15px;
+}
+
+@media (min-width: 768px) {
+  .banner img {
+    width: 1200px;
+  }
+}
+.variety {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+.variety .variation {
+  width: 300px;
+}
+.variety .variation img {
+  width: 100%;
+  padding: 5px;
 }
 
 .how-work {
@@ -211,6 +233,8 @@ input[type=submit]:hover {
 
 body {
   background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /*# sourceMappingURL=styles.css.map */
