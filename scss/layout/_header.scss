@@ -3,53 +3,36 @@
 
 
 
-
-
-.navbar {
-    font-family: $fuente-principal;
-    opacity: 85%;
-    a {
-        color: $color-first;
-        &:hover {
-            color: $color-fourth;
-        }
-    }
-    img {
-        width: 90px;
-    }
-}
-
-button.navbar-toggler {
-    background-color: $color-first;
-}
-
-
-a.navbar-brand {
-    font-size: 20px;
-    font-size: $font-medium;
-}
-
-nav.navbar.navbar-expand-lg {
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: $color-second;
-}
-
-
-@media (min-width: $tablet) {
-    .navbar {
-        font-family: $fuente-principal;
-        font-size: 30px;
-        a {
-            color: $color-first;
-            padding-left: 20px;
-            &:hover {
-                color: $color-fourth;
-            }
-        }
-        li {
-            margin: 10px;
-        }
+    position: sticky;
+    top: 0;
+    opacity: 0.9;
+    .favicon {
         img {
-            width: 100px;
+        width: 100px;
+        }
+    }
+
+    nav {
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 10px;
+            background-color: $color-first;
+            a {
+                text-decoration: none;
+                padding: 5px;
+                font-size: 15px;
+                margin: 5px;
+                font-weight: bold;
+            }
         }
     }
 }
