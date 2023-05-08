@@ -286,23 +286,28 @@ input[type=submit]:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px h2;
-  margin-padding: 20px;
+  margin: 20px;
+  background-color: #19A7CE;
+  padding: 10px;
+}
+.about-us h2 {
+  padding: 10px;
+  color: #F6F1F1;
 }
 .about-us p {
-  padding: 40px;
+  text-align: center;
+  display: flex;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: #F6F1F1;
 }
-.about-us img {
-  padding-top: 20px;
-  width: 60%;
-}
-
 .profile-about {
   width: 400px;
 }
 
 .bg-about-us {
-  background-color: #F6F1F1;
+  background-color: rgba(20, 107, 148, 0.431372549);
   width: 80%;
   display: flex;
   flex-direction: column;
