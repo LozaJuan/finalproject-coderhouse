@@ -302,6 +302,7 @@ input[type=submit]:hover {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   color: #F6F1F1;
+  background-color: #19A7CE;
 }
 .profile-about {
   width: 400px;
