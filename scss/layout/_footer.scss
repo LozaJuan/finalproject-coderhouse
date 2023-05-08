@@ -1,7 +1,6 @@
 @import "../utilities/variables";
 @import "../utilities/mixins";
 
-
 footer {
     @include flex-column;
     text-align: center;
