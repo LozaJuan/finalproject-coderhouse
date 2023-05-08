@@ -283,16 +283,17 @@ input[type=submit]:hover {
 /*MIXINS*/
 /*BOLSITAS DE CODIGO*/
 .about-us {
+  background-color: rgba(20, 107, 148, 0.431372549);
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
-  background-color: #19A7CE;
+  margin: 0 auto;
   padding: 10px;
 }
 .about-us h2 {
   padding: 10px;
   color: #F6F1F1;
+  text-align: center;
 }
 .about-us p {
   text-align: center;
@@ -307,13 +308,11 @@ input[type=submit]:hover {
 }
 
 .bg-about-us {
-  background-color: rgba(20, 107, 148, 0.431372549);
-  width: 80%;
+  max-width: 350px;
   display: flex;
   flex-direction: column;
+  padding: 10px;
   margin: 0 auto;
-  margin-bottom: 40px;
-  margin-top: 15px;
 }
 
 /*Colors*/
