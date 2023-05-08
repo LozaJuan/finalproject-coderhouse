@@ -5,14 +5,38 @@
 footer {
     @include flex-column;
     text-align: center;
-    opacity: 85%;
     background-color: $background-opacity;
     color: $color-first;
     img {
         width: 35px;
     }
     a {text-decoration: none;
+        color: $color-fourth;
+    }
+    .directory{
+        background-color: $background-opacity;
+        .directory-links {
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            .directory-link {
+                background-color: $color-second;
+                margin: 5px;
+                padding: 5px;
+                list-style: none;
+                text-align: center;
+                color: $color-first;
+                font-family: $fuente-principal;
+                font-weight: bold;
+                font-size: 10px;
+            }
         }
+    }
+    .site-owner {
+        padding: 10px;
+        font-family: $fuente-principal;
+    }
 }
 
 .whatsapp {
