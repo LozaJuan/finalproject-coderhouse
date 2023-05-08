@@ -2,23 +2,20 @@
 @import "../utilities/mixins";
 
 .banner {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0 auto;
     padding: 10px;
     img {
-        width: 100%;
     }
 }
 
 @media (min-width: $tablet) {
     .banner {
-        background-color: red;
-        width: 768px;
+        background-color: $background-opacity;
+        max-width: 768px;
     }
     .variety{
-        width: 768px;
+        max-width: 768px;
+    }
+    .card-content {
     }
 }
 
@@ -28,37 +25,60 @@
         flex-direction: row;
         margin: 0 auto;
         .variation {   
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: 0 auto;
-        padding: 8px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 0 auto;
+            padding: 8px;
         img {
             width: 100%;
+            border-radius: 3%;
         }
         }
 }
 
 
 .container-cards {
-    background-color: red;
     display: flex;
-    flex-direction: row;
     margin: 0 auto;
     flex-wrap: wrap;
+    padding: 5px;
     .card {
-        background-color: yellow;
-        margin: 0 auto;
+        padding: 2px;
         .card-content {
-            width: 80px;
+            border-radius: 3%;
+            width: 100px;
             padding: 5px;
-            margin: 5px;
-            background-color: green;
+            background-color: $background-opacity;
             display: flex;
             flex-direction: column;
+            p {
+                display: flex;
+                height: 30px;;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-family: $fuente-principal;
+                font-weight: bold;
+            }
             img {
-                width: 100%;
+            }
+            button {
+                margin-block: 10px;
             }
         }
     }
+}
+
+@media (min-width: $tablet) {
+    .container-cards {
+        max-width: 768px;
+    }
+    .card-content {
+        .card {
+            img {
+            }
+        }
+    }
+    
 }

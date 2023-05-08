@@ -8,16 +8,14 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: $color-second;
+    background-color: $background-opacity;
     position: sticky;
     top: 0;
-    opacity: 0.9;
     .favicon {
         img {
         width: 100px;
         }
     }
-
     nav {
         ul {
             display: flex;
@@ -32,6 +30,7 @@ header {
                 font-size: 15px;
                 margin: 5px;
                 font-weight: bold;
+                color: $color-second;
             }
         }
     }

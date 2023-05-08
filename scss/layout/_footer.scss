@@ -6,7 +6,7 @@ footer {
     @include flex-column;
     text-align: center;
     opacity: 85%;
-    background-color: $color-second;
+    background-color: $background-opacity;
     color: $color-first;
     img {
         width: 35px;

@@ -53,10 +53,9 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #19A7CE;
+  background-color: rgba(20, 107, 148, 0.431372549);
   position: sticky;
   top: 0;
-  opacity: 0.9;
 }
 header .favicon img {
   width: 100px;
@@ -75,6 +74,7 @@ header nav ul a {
   font-size: 15px;
   margin: 5px;
   font-weight: bold;
+  color: #19A7CE;
 }
 
 /*Colors*/
@@ -90,7 +90,7 @@ footer {
   align-items: center;
   text-align: center;
   opacity: 85%;
-  background-color: #19A7CE;
+  background-color: rgba(20, 107, 148, 0.431372549);
   color: #F6F1F1;
 }
 footer img {
@@ -179,23 +179,15 @@ input[type=submit]:hover {
 /*MIXINS*/
 /*BOLSITAS DE CODIGO*/
 .banner {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 0 auto;
   padding: 10px;
 }
-.banner img {
-  width: 100%;
-}
-
 @media (min-width: 768px) {
   .banner {
-    background-color: red;
-    width: 768px;
+    background-color: rgba(20, 107, 148, 0.431372549);
+    max-width: 768px;
   }
   .variety {
-    width: 768px;
+    max-width: 768px;
   }
 }
 .variety {
@@ -212,31 +204,44 @@ input[type=submit]:hover {
 }
 .variety .variation img {
   width: 100%;
+  border-radius: 3%;
 }
 
 .container-cards {
-  background-color: red;
   display: flex;
-  flex-direction: row;
   margin: 0 auto;
   flex-wrap: wrap;
+  padding: 5px;
 }
 .container-cards .card {
-  background-color: yellow;
-  margin: 0 auto;
+  padding: 2px;
 }
 .container-cards .card .card-content {
-  width: 80px;
+  border-radius: 3%;
+  width: 100px;
   padding: 5px;
-  margin: 5px;
-  background-color: green;
+  background-color: rgba(20, 107, 148, 0.431372549);
   display: flex;
   flex-direction: column;
 }
-.container-cards .card .card-content img {
-  width: 100%;
+.container-cards .card .card-content p {
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.container-cards .card .card-content button {
+  margin-block: 10px;
 }
 
+@media (min-width: 768px) {
+  .container-cards {
+    max-width: 768px;
+  }
+}
 .how-work {
   display: flex;
   justify-content: center;
@@ -282,6 +287,13 @@ input[type=submit]:hover {
   margin-top: 15px;
 }
 
+/*Colors*/
+/*Size fonts*/
+/*Resoluciones de pantallas*/
+/*Separaciones (margenes y paddings)*/
+/*Fuente*/
+/*MIXINS*/
+/*BOLSITAS DE CODIGO*/
 body {
   background-image: url(../img/background.jpg);
   background-size: cover;
