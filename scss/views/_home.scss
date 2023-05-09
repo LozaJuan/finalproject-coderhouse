@@ -3,8 +3,6 @@
 
 .banner {
     padding: 10px;
-    img {
-    }
 }
 
 @media (min-width: $tablet) {
@@ -14,8 +12,6 @@
     }
     .variety{
         max-width: 768px;
-    }
-    .card-content {
     }
 }
 
@@ -36,7 +32,6 @@
         }
         }
 }
-
 
 .container-cards {
     display: flex;
@@ -61,8 +56,6 @@
                 font-family: $fuente-principal;
                 font-weight: bold;
             }
-            img {
-            }
             button {
                 margin-block: 10px;
             }
@@ -72,13 +65,7 @@
 
 @media (min-width: $tablet) {
     .container-cards {
-        max-width: 768px;
+        max-width: 768px;   
     }
-    .card-content {
-        .card {
-            img {
-            }
-        }
-    }
-    
 }
+
