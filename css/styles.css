@@ -15,15 +15,20 @@ a {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+h1, h2, h3, h4 {
+  font-family: "Montserrat", sans-serif;
+}
+
 h1 {
   font-size: 4rem;
 }
 
-h2,
-h3,
-h4 {
+h2, h3 {
   font-size: 3rem;
-  font-family: "Montserrat", sans-serif;
+}
+
+h4 {
+  font-size: 1.2rem;
 }
 
 img {
@@ -77,6 +82,22 @@ header nav ul a {
   color: #19A7CE;
 }
 
+.hover:hover {
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+  header .favicon img {
+    width: 150px;
+  }
+  header nav ul {
+    padding: 20px;
+  }
+  header nav ul a {
+    margin: 20px;
+    font-size: x-large;
+  }
+}
 /*Colors*/
 /*Size fonts*/
 /*Resoluciones de pantallas*/
@@ -213,6 +234,7 @@ input[type=submit]:hover {
   }
   .variety {
     max-width: 768px;
+    background-color: red;
   }
 }
 .variety {
@@ -228,43 +250,40 @@ input[type=submit]:hover {
   padding: 8px;
 }
 .variety .variation img {
-  width: 100%;
   border-radius: 3%;
 }
 
-.container-cards {
+.cards {
   display: flex;
-  margin: 0 auto;
+  flex-direction: row;
   flex-wrap: wrap;
-  padding: 5px;
-}
-.container-cards .card {
-  padding: 2px;
-}
-.container-cards .card .card-content {
-  border-radius: 3%;
-  width: 100px;
-  padding: 5px;
   background-color: rgba(20, 107, 148, 0.431372549);
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 2%;
 }
-.container-cards .card .card-content p {
-  display: flex;
-  height: 30px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.cards .card {
+  width: 30%;
+  padding: 1%;
+}
+.cards .card .card-content {
+  border-radius: 5%;
+  padding: 5%;
+  background-color: #F6F1F1;
+}
+.cards .card .card-content .card-header h4 {
   font-family: "Montserrat", sans-serif;
-  font-weight: bold;
 }
-.container-cards .card .card-content button {
-  margin-block: 10px;
+.cards .card .card-content img {
+  border-radius: 5%;
 }
-
 @media (min-width: 768px) {
-  .container-cards {
+  .cards {
     max-width: 768px;
+  }
+  .cards .card {
+    width: 20%;
+  }
+  .cards .card h4 {
+    font-size: medium;
   }
 }
 .how-work {

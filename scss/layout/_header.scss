@@ -35,3 +35,28 @@ header {
         }
     }
 }
+
+.hover:hover {
+    color: $color-fourth;
+}
+
+
+
+@media (min-width: $tablet) {
+    header {
+        .favicon {
+            img{
+                width: 150px;
+            }
+        }
+        nav {
+            ul {
+                padding: 20px;
+                a {
+                    margin: 20px;
+                    font-size: x-large;
+                }
+            }
+        }
+    }
+}
