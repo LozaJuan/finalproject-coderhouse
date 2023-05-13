@@ -12,33 +12,33 @@ header {
     position: sticky;
     top: 0;
     .favicon {
+        position: sticky;
         img {
         width: 100px;
         }
     }
     nav {
         ul {
+            border-radius: 40px;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             list-style: none;
             padding: 10px;
-            background-color: $color-first;
+            background-color: $color-third;
             a {
                 text-decoration: none;
                 padding: 5px;
                 font-size: 15px;
                 margin: 5px;
                 font-weight: bold;
-                color: $color-second;
+                color: $color-first;
             }
         }
     }
 }
 
-.hover:hover {
-    color: $color-fourth;
-}
+
 
 
 
