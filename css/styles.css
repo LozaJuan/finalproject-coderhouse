@@ -70,9 +70,6 @@ header {
   position: sticky;
   top: 0;
 }
-header .favicon {
-  position: sticky;
-}
 header .favicon img {
   width: 100px;
 }
@@ -84,6 +81,12 @@ header nav ul {
   list-style: none;
   padding: 10px;
   background-color: #146C94;
+}
+header nav ul li {
+  transition: ease 0.6s;
+}
+header nav ul li:hover {
+  transform: scale(1.2);
 }
 header nav ul a {
   text-decoration: none;
@@ -256,10 +259,15 @@ input[type=submit]:hover {
   flex-direction: row;
   justify-content: center;
   margin: 0 auto;
-  padding: 8px;
+  padding: 1%;
+  border-radius: 3%;
+  transition: ease 1s;
 }
 .variety .variation img {
   border-radius: 3%;
+}
+.variety .variation:hover {
+  background-color: rgba(20, 107, 148, 0.431372549);
 }
 
 .cards {
@@ -283,6 +291,24 @@ input[type=submit]:hover {
 .cards .card .card-content img {
   border-radius: 5%;
 }
+.cards .card .card-content .card-footer {
+  background-color: red;
+}
+.cards .card .card-content .card-footer button {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #F6F1F1;
+  font-size: medium;
+  padding: 5%;
+  width: 50%;
+  transition: ease 0.3s;
+}
+.cards .card .card-content .card-footer button:hover {
+  background-color: #146C94;
+  color: #F6F1F1;
+}
+
 @media (min-width: 768px) {
   .cards {
     max-width: 768px;

@@ -27,11 +27,16 @@
             flex-direction: row;
             justify-content: center;
             margin: 0 auto;
-            padding: 8px;
+            padding: 1%;
+            border-radius: 3%;
+            transition: ease 1s;
         img {
             border-radius: 3%;
         }
         }
+        .variation:hover {
+            background-color: $background-opacity;
+            }
 }
 
 .cards {
@@ -55,10 +60,26 @@
                 border-radius: 5%;
             }
             .card-footer {
+                background-color: red;
+                button {
+                    font-family: $fuente-principal;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    background-color: $color-first;
+                    font-size: medium;
+                    padding: 5%;
+                    width: 50%;
+                    transition: ease .3s;
+                }
+                button:hover {
+                    background-color: $color-third;
+                    color: $color-first;
+                }
             }
         }
     }
 }
+
 
 @media (min-width: $tablet) {
     .cards {
