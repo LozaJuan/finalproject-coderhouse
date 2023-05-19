@@ -1,0 +1,102 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+
+
+
+
+.product-body {
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    .product-data {
+        background-color: $background-opacity;
+    }
+    .product-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        img {
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+    }
+    .product-title {
+        margin: 5%;
+    }
+    .product-button {
+        button {
+            border-radius: 12px;
+            font-family: $fuente-principal;
+            text-transform: uppercase;
+            font-weight: bold;
+            background-color: $color-first;
+            font-size: large;
+            padding: 5%;
+            width: 50%;
+            transition: ease .3s;
+        }
+        button:hover {
+            background-color: $color-third;
+            color: $color-first;
+        }
+    }
+    .product-description {
+        background-color: $color-first;
+        padding: 5%;
+        margin: 5%;
+        ol {
+            background-color: rgba(255, 0, 0, 0.158);
+            padding-left: 5%;
+            li {
+                background-color: rgba(0, 0, 255, 0.082);
+                font-family: $fuente-principal;
+                font-size: small;
+            }
+        }
+    }
+    .img-instructions {
+        margin-top: 5%;
+    }
+}
+
+@media (min-width: $tablet) {
+    .product-main {
+        padding-bottom: 5%;
+    }
+    .product-body {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 768px;
+        margin: 0 auto;
+        margin-top: 2%;
+        .product-data {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $background-opacity;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            max-width: 50%;
+            align-items: center;
+            .product-title {
+                width: 200px;
+            }
+        }
+        .product-image {
+            max-width: 50%;
+            display: flex;
+            flex-direction: column;
+            img {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+        }
+        .img-instructions {
+            max-width: 100%;
+        }
+    }
+}
+
+

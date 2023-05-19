@@ -47,6 +47,10 @@ img {
   color: #19A7CE;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 /*Colors*/
 /*Size fonts*/
 /*Resoluciones de pantallas*/
@@ -291,10 +295,8 @@ input[type=submit]:hover {
 .cards .card .card-content img {
   border-radius: 5%;
 }
-.cards .card .card-content .card-footer {
-  background-color: red;
-}
 .cards .card .card-content .card-footer button {
+  border-radius: 12px;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
@@ -377,6 +379,104 @@ input[type=submit]:hover {
 /*Fuente*/
 /*MIXINS*/
 /*BOLSITAS DE CODIGO*/
+/*Colors*/
+/*Size fonts*/
+/*Resoluciones de pantallas*/
+/*Separaciones (margenes y paddings)*/
+/*Fuente*/
+/*MIXINS*/
+/*BOLSITAS DE CODIGO*/
+.product-body {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+}
+.product-body .product-data {
+  background-color: rgba(20, 107, 148, 0.431372549);
+}
+.product-body .product-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.product-body .product-image img {
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.product-body .product-title {
+  margin: 5%;
+}
+.product-body .product-button button {
+  border-radius: 12px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #F6F1F1;
+  font-size: large;
+  padding: 5%;
+  width: 50%;
+  transition: ease 0.3s;
+}
+.product-body .product-button button:hover {
+  background-color: #146C94;
+  color: #F6F1F1;
+}
+.product-body .product-description {
+  background-color: #F6F1F1;
+  padding: 5%;
+  margin: 5%;
+}
+.product-body .product-description ol {
+  background-color: rgba(255, 0, 0, 0.158);
+  padding-left: 5%;
+}
+.product-body .product-description ol li {
+  background-color: rgba(0, 0, 255, 0.082);
+  font-family: "Montserrat", sans-serif;
+  font-size: small;
+}
+.product-body .img-instructions {
+  margin-top: 5%;
+}
+
+@media (min-width: 768px) {
+  .product-main {
+    padding-bottom: 5%;
+  }
+  .product-body {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 768px;
+    margin: 0 auto;
+    margin-top: 2%;
+  }
+  .product-body .product-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(20, 107, 148, 0.431372549);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    max-width: 50%;
+    align-items: center;
+  }
+  .product-body .product-data .product-title {
+    width: 200px;
+  }
+  .product-body .product-image {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  .product-body .product-image img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .product-body .img-instructions {
+    max-width: 100%;
+  }
+}
 body {
   background-image: url(../img/background.jpg);
   background-size: cover;
