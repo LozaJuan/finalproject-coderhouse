@@ -2,3 +2,79 @@
 @import "../utilities/mixins";
 
 
+
+#contenedor #fr:checked ~ #elementos .nfr,
+#contenedor #fr:checked ~ #elementos .mfr {
+    display: none;
+}
+#contenedor #nfr:checked ~ #elementos .mfr,
+#contenedor #nfr:checked ~ #elementos .fr {
+    display: none;
+}
+#contenedor #mfr:checked ~ #elementos .nfr,
+#contenedor #mfr:checked ~ #elementos .fr {
+    display: none;
+}
+
+
+.body-store {
+    margin: 1%;
+}
+
+#contenedor {
+    background-color: $color-first;
+    display: flex;
+    padding-top: 2%;
+    justify-content: center;
+    align-items: center;
+    label {
+        background-color: $color-third;
+        font-family: $fuente-principal;
+        width: 20%;
+        margin: 1%;
+        cursor: pointer;
+        color: $color-first;
+        transition: ease 0.6s;
+        &:hover {
+            background-color: $color-second;
+            transform: scale(1.1);
+        }
+    }
+
+}
+
+
+
+input[type="radio"] {
+    display: none;
+}
+
+#elementos {
+    margin-top: 5%;
+    background-color: $color-first;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+@media (min-width: $phone-xl) {
+    #contenedor {
+        padding-top: 2%;
+        label {
+            padding: 1%;
+        }
+    
+    }
+}
+
+@media (min-width: $tablet) {
+    #contenedor {
+        max-width: 768px;
+        label {
+            width: 18%;
+            padding: 2%;
+        }
+    
+    }
+}

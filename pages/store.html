@@ -24,139 +24,318 @@
                 </ul>
             </nav>
         </header>
-        <main>
-            <h2 class="text-center mt-3">Store</h2>
+        <main class="body-store">
             <!--Container Cards-->
-            <div class="text-center cards">
-                <div class="card">
-                    <div class="card-content">
-                        <img src="../img/products/albino-bat-fr.jpg" alt="albino bat fr">
-                        <div class="card-header">
-                            <h4>Albino Bat FR</h4>
-                        </div>
-                        <div class="card-footer">
-                            <button>Buy</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <img src="../img/products/albino-bat-fr.jpg" alt="albino bat fr">
-                        <div class="card-header">
-                            <h4>Albino Bat FR texto</h4>
-                        </div>
-                        <div class="card-footer">
-                            <button>Buy</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <img src="../img/products/albino-bat-fr.jpg" alt="albino bat fr">
-                        <div class="card-header">
-                            <h4>Albino Bat FR texto parassss</h4>
-                        </div>
-                        <div class="card-footer">
-                            <button>Buy</button>
+            <div class="text-center cards" id="contenedor">
+                    <input type="radio" name="filtro" id="todos" checked="yes">
+                    <label for="todos">Todos</label>
+            
+                    <input type="radio" name="filtro" id="fr">
+                    <label for="fr">FR</label>
+            
+                    <input type="radio" name="filtro" id="nfr">
+                    <label for="nfr">NFR</label>
+            
+                    <input type="radio" name="filtro" id="mfr">
+                    <label for="mfr">MFR</label>
+
+            <!--filter cards-->    
+                <div id="elementos">
+                    <div class="card fr">
+                        <div class="card-content">
+                            <img src="../img/products/albino-bat-fr.jpg" alt="albino bat fr">
+                            <div class="card-header">
+                                <h4>Albino Bat FR</h4>
+                            </div>
+                            <div class="card-footer">
+                                <button>Buy</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <img src="../img/products/albino-bat-fr.jpg" alt="albino bat fr">
-                        <div class="card-header">
-                            <h4>Albino Bat FR texto parassss</h4>
-                        </div>
-                        <div class="card-footer">
-                            <button>Buy</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <img src="../img/products/albino-bat-fr.jpg" alt="albino bat fr">
-                        <div class="card-header">
-                            <h4>Albino Bat FR texto parassss</h4>
-                        </div>
-                        <div class="card-footer">
-                            <button>Buy</button>
+                    <div class="card nfr">
+                        <div class="card-content">
+                            <img src="../img/products/albino-bat-nfr.jpg" alt="albino bat nfr">
+                            <div class="card-header">
+                                <h4>Albino Bat NFR</h4>
+                            </div>
+                            <div class="card-footer">
+                                <button>Buy</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <img src="../img/products/albino-bat-fr.jpg" alt="albino bat fr">
-                        <div class="card-header">
-                            <h4>Albino Bat FR texto parassss</h4>
-                        </div>
-                        <div class="card-footer">
-                            <button>Buy</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <img src="../img/products/albino-bat-fr.jpg" alt="albino bat fr">
-                        <div class="card-header">
-                            <h4>Albino Bat FR texto parassss</h4>
-                        </div>
-                        <div class="card-footer">
-                            <button>Buy</button>
+                    <div class="card mfr">
+                        <div class="card-content">
+                            <img src="../img/products/albino-bat-mfr.jpg" alt="albino bat mfr">
+                            <div class="card-header">
+                                <h4>Albino Bat MFR</h4>
+                            </div>
+                            <div class="card-footer">
+                                <button>Buy</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <img src="../img/products/albino-bat-fr.jpg" alt="albino bat fr">
-                        <div class="card-header">
-                            <h4>Albino Bat FR texto parassss</h4>
-                        </div>
-                        <div class="card-footer">
-                            <button>Buy</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <img src="../img/products/albino-bat-fr.jpg" alt="albino bat fr">
-                        <div class="card-header">
-                            <h4>Albino Bat FR texto parassss</h4>
-                        </div>
-                        <div class="card-footer">
-                            <button>Buy</button>
+                    <div class="card fr">
+                        <div class="card-content">
+                            <img src="../img/products/albino-monkey fr.jpg" alt="albino monkey fr">
+                            <div class="card-header">
+                                <h4>Albino Monkey FR</h4>
+                            </div>
+                            <div class="card-footer">
+                                <button>Buy</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <img src="../img/products/albino-bat-fr.jpg" alt="albino bat fr">
-                        <div class="card-header">
-                            <h4>Albino Bat FR texto parassss</h4>
-                        </div>
-                        <div class="card-footer">
-                            <button>Buy</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <img src="../img/products/albino-bat-fr.jpg" alt="albino bat fr">
-                        <div class="card-header">
-                            <h4>Albino Bat FR texto parassss</h4>
-                        </div>
-                        <div class="card-footer">
-                            <button>Buy</button>
+                    <div class="card nfr">
+                        <div class="card-content">
+                            <img src="../img/products/albino-monkey nfr.jpg" alt="albino bat nfr">
+                            <div class="card-header">
+                                <h4>Albino Monkey NFR</h4>
+                            </div>
+                            <div class="card-footer">
+                                <button>Buy</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <img src="../img/products/albino-bat-fr.jpg" alt="albino bat fr">
-                        <div class="card-header">
-                            <h4>Albino Bat FR texto parassss</h4>
+                    <div class="card fr">
+                        <div class="card-content">
+                            <img src="../img/products/axolotl fr.jpg" alt="axolotl fr">
+                            <div class="card-header">
+                                <h4>Axolotl FR</h4>
+                            </div>
+                            <div class="card-footer">
+                                <button>Buy</button>
+                            </div>
                         </div>
-                        <div class="card-footer">
-                            <button>Buy</button>
+                    </div>
+                    <div class="card nfr">
+                        <div class="card-content">
+                            <img src="../img/products/axolotl nfr.jpg" alt="axolotl nfr">
+                            <div class="card-header">
+                                <h4>Axolotl NFR</h4>
+                            </div>
+                            <div class="card-footer">
+                                <button>Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card nfr">
+                        <div class="card-content">
+                            <img src="../img/products/australian kelpie nfr.jpg" alt="australian kelpie nfr">
+                            <div class="card-header">
+                                <h4>Australian Kelpie NFR</h4>
+                            </div>
+                            <div class="card-footer">
+                                <button>Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card fr">
+                        <div class="card-content">
+                            <img src="../img/products/arctic reindeer fr.jpg" alt="arctic reindeer fr">
+                            <div class="card-header">
+                                <h4>Arctic Reindeer FR</h4>
+                            </div>
+                            <div class="card-footer">
+                                <button>Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card nfr">
+                        <div class="card-content">
+                            <img src="../img/products/arctic reindeer nfr.jpg" alt="arctic reindeer nfr">
+                            <div class="card-header">
+                                <h4>Arctic Reindeer NFR</h4>
+                            </div>
+                            <div class="card-footer">
+                                <button>Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card fr">
+                        <div class="card-content">
+                            <img src="../img/products/bat dragon fr.jpg" alt="bat dragon fr">
+                            <div class="card-header">
+                                <h4>Bat Dragon FR</h4>
+                            </div>
+                            <div class="card-footer">
+                                <button>Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card nfr">
+                        <div class="card-content">
+                            <img src="../img/products/bat nfr.jpg" alt="bat nfr">
+                            <div class="card-header">
+                                <h4>Bat NFR</h4>
+                            </div>
+                            <div class="card-footer">
+                                <button>Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mfr">
+                        <div class="card-content">
+                            <img src="../img/products/bat mfr.jpg" alt="bat mfr">
+                            <div class="card-header">
+                                <h4>Bat MFR</h4>
+                            </div>
+                            <div class="card-footer">
+                                <button>Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card nfr">
+                        <div class="card-content">
+                            <img src="../img/products/black panther nfr.jpg" alt="black panther nfr">
+                            <div class="card-header">
+                                <h4>Black Panther NFR</h4>
+                            </div>
+                            <div class="card-footer">
+                                <button>Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mfr">
+                        <div class="card-content">
+                            <img src="../img/products/black panther mfr.jpg" alt="black panther mfr">
+                            <div class="card-header">
+                                <h4>Black Panther MFR</h4>
+                            </div>
+                            <div class="card-footer">
+                                <button>Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card fr">
+                        <div class="card-content">
+                            <img src="../img/products/blue dog fr.jpg" alt="blue dog fr">
+                            <div class="card-header">
+                                <h4>Blue dog FR</h4>
+                            </div>
+                            <div class="card-footer">
+                                <button>Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card nfr">
+                        <div class="card-content">
+                            <img src="../img/products/blue dog nfr.jpg" alt="blue dog nfr">
+                            <div class="card-header">
+                                <h4>Blue dog NFR</h4>
+                            </div>
+                            <div class="card-footer">
+                                <button>Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card nfr">
+                        <div class="card-content">
+                            <img src="../img/products/bullfrog nfr.jpg" alt="bullfrog nfr">
+                            <div class="card-header">
+                                <h4>Bullfrog NFR</h4>
+                            </div>
+                            <div class="card-footer">
+                                <button>Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mfr">
+                        <div class="card-content">
+                            <img src="../img/products/bullfrog mfr.jpg" alt="bullfrog mfr">
+                            <div class="card-header">
+                                <h4>Bullfrog MFR</h4>
+                            </div>
+                            <div class="card-footer">
+                                <button>Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card nfr">
+                        <div class="card-content">
+                            <img src="../img/products/butterfly nfr.jpg" alt="Butterfly nfr">
+                            <div class="card-header">
+                                <h4>Butterfly NFR</h4>
+                            </div>
+                            <div class="card-footer">
+                                <button>Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mfr">
+                        <div class="card-content">
+                            <img src="../img/products/butterfly mfr.jpg" alt="butterfly mfr">
+                            <div class="card-header">
+                                <h4>Butterfly MFR</h4>
+                            </div>
+                            <div class="card-footer">
+                                <button>Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card nfr">
+                        <div class="card-content">
+                            <img src="../img/products/chick nfr.jpg" alt="Chick nfr">
+                            <div class="card-header">
+                                <h4>Chick NFR</h4>
+                            </div>
+                            <div class="card-footer">
+                                <button>Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card nfr">
+                        <div class="card-content">
+                            <img src="../img/products/chicken nfr.jpg" alt="chicken nfr">
+                            <div class="card-header">
+                                <h4>Chicken NFR</h4>
+                            </div>
+                            <div class="card-footer">
+                                <button>Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mfr">
+                        <div class="card-content">
+                            <img src="../img/products/chicken mfr.jpg" alt="chicken mfr">
+                            <div class="card-header">
+                                <h4>Chicken MFR</h4>
+                            </div>
+                            <div class="card-footer">
+                                <button>Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card fr">
+                        <div class="card-content">
+                            <img src="../img/products/cow fr.jpg" alt="cow fr">
+                            <div class="card-header">
+                                <h4>Cow FR</h4>
+                            </div>
+                            <div class="card-footer">
+                                <button>Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card nfr">
+                        <div class="card-content">
+                            <img src="../img/products/cow nfr.jpg" alt="cow nfr">
+                            <div class="card-header">
+                                <h4>Cow NFR</h4>
+                            </div>
+                            <div class="card-footer">
+                                <button>Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mfr">
+                        <div class="card-content">
+                            <img src="../img/products/cow mfr.jpg" alt="cow mfr">
+                            <div class="card-header">
+                                <h4>Cow MFR</h4>
+                            </div>
+                            <div class="card-footer">
+                                <button>Buy</button>
+                            </div>
                         </div>
                     </div>
                 </div>
