@@ -54,6 +54,7 @@
             .card-header {
                 h4 {
                     font-family: $fuente-principal;
+                    color: $color-first;
                 }
             }
             img {
@@ -62,6 +63,7 @@
             .card-footer {
                 button {
                     border-radius: 12px;
+                    border-style: hidden;
                     font-family: $fuente-principal;
                     text-transform: uppercase;
                     font-weight: bold;

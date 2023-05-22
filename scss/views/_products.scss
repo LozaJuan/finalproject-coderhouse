@@ -3,7 +3,8 @@
 
 
 
-
+.product-main {
+}
 
 .product-body {
     display: flex;
@@ -16,13 +17,18 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 100%;
+        background-color: $background-opacity;
+        padding-top: 3%;
         img {
             border-radius: 10px;
             margin: 0 auto;
+            width: 75%;
         }
     }
     .product-title {
         margin: 5%;
+        color: $color-first;
     }
     .product-button {
         button {
@@ -46,10 +52,8 @@
         padding: 5%;
         margin: 5%;
         ol {
-            background-color: rgba(255, 0, 0, 0.158);
             padding-left: 5%;
             li {
-                background-color: rgba(0, 0, 255, 0.082);
                 font-family: $fuente-principal;
                 font-size: small;
             }
@@ -87,10 +91,13 @@
             max-width: 50%;
             display: flex;
             flex-direction: column;
+            padding: 0;
+            border-radius: 10%;
             img {
                 border-top-left-radius: 10px;
                 border-top-right-radius: 0;
                 border-bottom-right-radius: 0;
+                width: 100%;
             }
         }
         .img-instructions {
