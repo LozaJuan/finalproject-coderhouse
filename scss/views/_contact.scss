@@ -2,7 +2,8 @@
 @import "../utilities/mixins";
 
 .title-contact {
-    font-family: $fuente-principal
+    font-family: $fuente-principal;
+    display: none;
 }
 
 form {
@@ -13,13 +14,17 @@ form {
     border-radius: 5px;
     font-family: $fuente-principal;
     padding-bottom: 10px;
+    background-color: $background-opacity;
+    padding-top: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 label {
     display: block;
     font-size: 18px;
     font-weight: bold;
-    color: $color-third;
+    color: $color-first;
 }
 
 input, textarea {

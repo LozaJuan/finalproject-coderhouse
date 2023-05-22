@@ -2,6 +2,7 @@
 @import "../utilities/mixins";
 
 footer {
+    padding: 2%;
     @include flex-column;
     text-align: center;
     background-color: $background-opacity;
@@ -11,6 +12,9 @@ footer {
     }
     a {text-decoration: none;
         color: $color-fourth;
+    }
+    h3 {
+        font-size: large;
     }
     .directory{
         background-color: $background-opacity;
