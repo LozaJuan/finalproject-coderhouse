@@ -349,40 +349,88 @@ input[type=submit]:hover {
 /*Fuente*/
 /*MIXINS*/
 /*BOLSITAS DE CODIGO*/
-.about-us {
-  background-color: rgba(20, 107, 148, 0.431372549);
+/*
+<main class="about-us-main">
+<div class="about-us-content">
+    <img src="../img/about-us.png" alt="profile cat in game" class="profile-about">
+    <h2>About Me</h2>
+    <p>Hello Adopt Me Roblox animal lovers! I am a passionate pet seller with a wide variety of pets, accessories, food, and toys to make your pet's life more comfortable and fun in the game. My goal is to help you find your perfect companion that fits your lifestyle and needs, while providing excellent customer service to ensure you feel happy and satisfied with your purchase. Thank you for visiting my store and I hope to see you soon!</p>
+</main>
+*/
+.about-us-main {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-  padding: 10px;
-}
-.about-us h2 {
-  padding: 10px;
-  color: #F6F1F1;
   text-align: center;
 }
-.about-us p {
-  text-align: center;
-  display: flex;
-  padding: 10px;
+.about-us-main .about-us-content {
+  background-color: #F6F1F1;
+  margin: 3%;
+  padding: 5%;
+}
+.about-us-main .about-us-content .about-us-image {
+  padding: 1%;
+}
+.about-us-main .about-us-content .about-us-text {
+  background-color: #F6F1F1;
+  padding: 5%;
   font-family: "Montserrat", sans-serif;
-  font-size: 15px;
-  color: #F6F1F1;
-  background-color: #19A7CE;
 }
-.profile-about {
-  width: 400px;
+.about-us-main .about-us-content .about-us-text h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #19A7CE;
 }
 
-.bg-about-us {
-  max-width: 350px;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  margin: 0 auto;
+@media (min-width: 425px) {
+  .about-us-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .about-us-main .about-us-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .about-us-main .about-us-content .about-us-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding: 0%;
+  }
+  .about-us-main .about-us-content .about-us-text {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+  }
 }
-
+@media (min-width: 768px) {
+  .about-us-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 768px;
+  }
+  .about-us-main .about-us-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .about-us-main .about-us-content .about-us-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 0%;
+  }
+  .about-us-main .about-us-content .about-us-text {
+    font-size: large;
+  }
+}
 /*Colors*/
 /*Size fonts*/
 /*Resoluciones de pantallas*/
